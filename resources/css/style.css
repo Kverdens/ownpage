@@ -22,7 +22,6 @@ html {
     content: '.';
     clear: both;
     display: block;
-    display: clock;
     height: 0;
     visibility: hidden;
 }
@@ -267,6 +266,9 @@ h2:after {
 /* HOW IT WORKS */
 /*--------------------------------------*/
 
+.section-steps {
+    background-color: #f4f4f4;
+}
 
 .step-box:first-child {
     text-align: right;
