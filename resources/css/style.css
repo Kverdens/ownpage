@@ -124,6 +124,8 @@ h2:after {
     vertical-align: middle;
     margin-top: -5px;
 }
+
+
 /* ------- LINKS------ */
 
 a:link,
@@ -220,9 +222,19 @@ input[type=submit]:active {
         width: auto;
         float: left;
         margin-top: 20px;
-
     }
 
+
+    .logo-black {
+        height: 50px;
+        width: auto;
+        float: left;
+        margin: 5px 0px;
+        display: none;
+        
+    }
+
+    /*   Main navi    */
     .main-nav {
         float: right;
         list-style: none;
@@ -251,6 +263,51 @@ input[type=submit]:active {
     .main-nav li a:active {
         border-bottom: 2px solid #e67e22;
     }
+
+    /* mobile navi */
+    .mobile-nav-icon {
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        display: none;
+        font-size: 200%;
+        color: white;
+        background-color: #f3ac6f;
+        border-radius: 50%;
+
+       
+    }
+
+    .mobile-nav-icon i {
+        font-size: 200%;
+        color: white;
+    }
+
+    /* Sticky navi */
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.829);
+        box-shadow: 0 2px 2px rgba(221, 221, 221, 0.829);
+        z-index: 9999;
+    }
+
+    .sticky .main-nav { margin-top: 18px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 16px 0px;
+        color: #555;
+    }
+
+    .sticky .logo { display: none; }
+
+    .sticky .logo-black { display: block; }   
+
 
 /*--------------------------------------*/
 /* FEATURES */
@@ -604,3 +661,27 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+/*--------------------------------------*/
+/* Animations */
+/*--------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-name: 1s;
+            animation-name: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
